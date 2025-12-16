@@ -21,7 +21,7 @@ public class Main {
     static class MeuHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            String response = "<h1>Java Web sem Maven e sem Tomcat!</h1>";
+            String response = "<h1>teste</h1>";
             exchange.sendResponseHeaders(200, response.length());
             OutputStream os = exchange.getResponseBody();
             os.write(response.getBytes());
